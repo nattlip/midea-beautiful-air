@@ -1,0 +1,60 @@
+https://github.com/nbogojevic/midea-beautiful-air?tab=readme-ov-file
+
+https://github.com/nbogojevic/homeassistant-midea-air-appliances-lan
+
+https://github.com/mac-zhou/midea-ac-py#how-to-get-applianceid-token-and-k1
+
+https://github.com/reneklootwijk/node-mideahvac
+
+
+open powershell
+
+command c:/Users/natte/source/repos/nattlip/midea-beautiful-air/env/Scripts/Activate.ps1
+
+
+
+ midea-beautiful-air-cli  discover  --account master.jilles.gp@gmail.com --password stoeltjesklokje12 --ip 192.168.178.248 --id 153931628173605
+
+
+ return
+
+ id 000000P0000000Q1D8341CF0E1D80000/153931628173605
+  id      = 153931628173605
+  addr    = 192.168.178.248
+  s/n     = 000000P0000000Q1D8341CF0E1D80000
+  model   = Air conditioner
+  ssid    = net_ac_E1D8
+  online  = True
+  name    = airco studeerkamer
+  running = True
+  target  = 30.0
+  indoor  = 24.5
+  outdoor = 8.0
+  fan     = 80
+  mode    = 4
+  purify  = False
+  eco     = False
+  sleep   = False
+  F       = False
+  error   = 0
+  supports= {'eco': 0, 'heat_8': 1, 'mode': 1, 'fan_swing': 1, 'electricity': 1, 'filter_reminder': 0, 'strong_fan': 1}
+  version = 3
+
+  On	net-ac-E1D8.fritz.box	192.168.178.248	D8:34:1C:F0:E1:D8  17 tm 28 sn
+
+
+  midea-beautiful-air-cli status --ip 192.168.178.248 --account master.jilles.gp@gmail.com --password stoeltjesklokje12
+
+  midea-beautiful-air-cli set --ip 192.168.178.248 --account master.jilles.gp@gmail.com --password stoeltjesklokje12 --running 0
+
+  midea-beautiful-air-cli set --ip 192.168.178.248 --account master.jilles.gp@gmail.com --password stoeltjesklokje12 --running 1
+
+
+  from midea_beautiful import appliance_state
+
+appliance = appliance_state(
+    address=192.168.178.248,  # APPLIANCE_IP_ADDRESS 
+    token="TOKEN",  # TOKEN obtained from Midea API
+    key="KEY",  # Token KEY obtained from Midea API
+)
+print(f"{appliance!r}")

@@ -1,4 +1,4 @@
-""" Library for local network access to Midea dehumidifier appliances """
+"""can you translate next py code to node.js  Library for local network access to Midea dehumidifier appliances """
 from __future__ import annotations
 
 import logging

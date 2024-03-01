@@ -1,4 +1,6 @@
-"""Scans network for Midea appliances."""
+"""can you translate next py code to node.js 
+Scans network for Midea appliances."""
+
 from __future__ import annotations
 
 import logging

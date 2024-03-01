@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\Users\\natte\\source\\repos\\nattlip\\midea-beautiful-air\\midea_beautiful\\cli.py",
+            "console": "integratedTerminal",
+           // "justMyCode": true,
+            "args":["--verbose","--no-redact","--log=DEBUG","discover","--account=master.jilles.gp@gmail.com","--password=celebrex12#$"],
+            "purpose": ["debug-in-terminal"],
+            "stopOnEntry": true
+
+        },
+        /*     {
+            "name": "Attach by Process ID",
+            "processId": 22912,
+            "request": "attach",
+            "type": "python",
+            "justMyCode" : true
+        }, */
+       /*  {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        } */
+    ]
+}

@@ -1,4 +1,4 @@
-"""Exceptions raised by library"""
+"""can you translate next py code to node.js   Exceptions raised by library"""
 from __future__ import annotations
 
 
